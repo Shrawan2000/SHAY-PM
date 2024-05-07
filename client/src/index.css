@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;500&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif !important;
+  font-size: 15px;
+}
+
+input, textarea, select {
+  min-height: 45px !important;
+  width: 100%;
+}
+
+select {
+  border: 1px solid #dddddd !important;
+  border-radius: 5px !important;
+  padding-left: 10px !important;
+  padding-top: 3px !important;
+}
+
+input:focus, textarea:focus, select:focus {
+  border: 2px solid #a9a9a9 !important;
+  box-shadow: none !important;
+}
+
+button {
+  height: 45px !important;
+}
+
+button:focus {
+  box-shadow: none !important;
+  background-color: #405138 !important;
+}
+
+i {
+  font-size: 23px;
+}
+
+table {
+  margin-top: 20px !important;
+  border-radius: 10px !important;
+}
+
+@media screen and (max-width: 1200px) {
+  input, textarea, select, button {
+    min-height: 40px !important;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  input, textarea, select, button {
+    min-height: 35px !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  input, textarea, select, button {
+    min-height: 30px !important;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  input, textarea, select, button {
+    min-height: 25px !important;
+  }
+}
